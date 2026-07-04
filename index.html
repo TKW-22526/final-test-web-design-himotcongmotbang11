@@ -3,38 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trại Mèo Nam Cực Quý Hiếm</title>
+    <title>Thế Giới Động Vật Có Cánh & Đồ Dùng Thú Cưng</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
         <div class="container">
-            <a class="navbar-brand font-weight-bold" href="index.html">❄️ AntarcticCat</a>
+            <a class="navbar-brand font-weight-bold text-danger" href="index.html">🦜 SkyWings Store</a>
             <div class="navbar-nav ml-auto flex-row">
                 <a class="nav-link active px-3" href="index.html">Cửa hàng</a>
-                <a class="nav-link px-3" href="html/lien-he.html">Liên hệ</a>
                 <a class="nav-link px-3" href="html/san-pham.html">Sản Phẩm</a>
+                <a class="nav-link px-3" href="html/phu-kien.html">Phụ Kiện</a>
+                <a class="nav-link px-3" href="html/lien-he.html">Liên hệ</a>
             </div>
         </div>
     </nav>
 
-    <header class="hero-section text-center">
+    <header class="hero-section text-center bg-light py-5">
         <div class="container">
-            <h1 class="display-4 font-weight-bold text-dark">Shop Mèo Nam Cực Độc Nhất</h1>
-            <p class="lead text-muted">Chuyên cung cấp các dòng mèo thuần chủng lặn biển bắt tôm núi lửa siêu lùa gà.</p>
+            <h1 class="display-4 font-weight-bold text-dark">Thế Giới Loài Chim & Phụ Kiện</h1>
+            <p class="lead text-muted mb-4">Chuyên cung cấp các dòng động vật có cánh thuần chủng, thông minh cùng phụ kiện cao cấp đi kèm.</p>
+            
+            <a href="html/san-pham.html" class="btn btn-hero-cta btn-lg px-5 py-3 font-weight-bold">
+                Khám Phá Cửa Hàng ✨
+            </a>
         </div>
     </header>
 
-    <main class="container">
-        <h2 class="font-weight-bold mb-4 text-center">Danh Sách Các Bé Mèo Sẵn Hàng</h2>
-        <div class="row" id="product-list">
+    <section class="container my-5 py-4">
+        <div class="row text-center">
+            <div class="col-md-4 mb-4">
+                <div class="about-card p-4">
+                    <div class="about-icon mb-3">🌌</div>
+                    <h4 class="font-weight-bold mb-2">Nguồn Gốc Huyền Thoại</h4>
+                    <p class="text-muted small">Mỗi cá thể tại SkyWings đều trải qua quá trình tuyển chọn nghiêm ngặt từ các vùng đất xa xôi, sở hữu những đặc tính sinh tồn vượt trội.</p>
+                </div>
             </div>
+            <div class="col-md-4 mb-4">
+                <div class="about-card p-4">
+                    <div class="about-icon mb-3">💎</div>
+                    <h4 class="font-weight-bold mb-2">Hệ Sinh Thái Cao Cấp</h4>
+                    <p class="text-muted small">Không chỉ bán thú cưng, chúng tôi cung cấp giải pháp trọn gói từ lồng chim mạ vàng, thức ăn hữu cơ cho tới đồ chơi xả stress.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="about-card p-4">
+                    <div class="about-icon mb-3">🛡️</div>
+                    <h4 class="font-weight-bold mb-2">Đặc Quyền Thượng Lưu</h4>
+                    <p class="text-muted small">Sở hữu siêu phẩm tại đây đồng nghĩa với việc bạn tham gia vào cộng đồng tinh hoa, nhận bảo hành và hỗ trợ y tế trọn đời.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main id="store-products">
+        <section class="container mb-5">
+            <div class="d-flex align-items-center mb-4">
+                <hr class="flex-grow-1">
+                <h2 class="font-weight-bold px-3 text-center text-dark">🦜 Động Vật Có Cánh Quý Hiếm</h2>
+                <hr class="flex-grow-1">
+            </div>
+            <div id="animal-list" class="row"></div>
+        </section>
+
+        <section class="container mb-5">
+            <div class="d-flex align-items-center mb-4">
+                <hr class="flex-grow-1">
+                <h2 class="font-weight-bold px-3 text-center text-dark">🛍️ Đồ Dùng & Phụ Kiện Cần Thiết</h2>
+                <hr class="flex-grow-1">
+            </div>
+            <div id="accessory-list" class="row"></div>
+        </section>
     </main>
 
-    <footer class="text-center">
-        <p class="mb-0">&copy; 2026 AntarcticCat Store. Tất cả các quyền được bảo lưu.</p>
+    <footer class="text-center py-4 bg-dark text-white mt-5">
+        <p class="mb-0">&copy; 2026 SkyWings Store. Tất cả các quyền được bảo lưu.</p>
     </footer>
 
     <script src="js/script.js"></script>

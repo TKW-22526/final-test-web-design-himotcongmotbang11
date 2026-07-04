@@ -1,75 +1,79 @@
-
-
-const Products = [
+const Category_Animals = [
     {
-        id: "1",
-        name: "Mèo Đen Siêu Ngầu Nam Cực",
-        price: "500 usd",
-        description: "Đây là giống mèo thuần chủng đến từ Nam Cực.<br>Để thuận lợi cho việc sinh tồn, giống mèo này đã tiến hóa cơ thể với kích cỡ nhỏ nhắn nhằm săn bắt tôm núi lửa nằm sâu dưới đáy đại dương. Vì thời tiết khắc nghiệt, chúng đã thoái hóa hoàn toàn bộ lông của mình.",
-        image: "../assets/meo.png",
-        description1: "Một chú mèo mang phong cách cực kỳ cool ngầu, thần thái chuẩn đại ca phối đồ bao chất!",
+        id: "a1",
+        name: "Vẹt Macaw Sặc Sỡ",
+        price: "1500 usd",
+        description: "Giống vẹt thông minh có nguồn gốc từ vùng rừng rậm Amazon.<br>Chúng sở hữu bộ lông rực rỡ và có khả năng bắt chước tiếng người cực kỳ tốt. Tuổi thọ của loài này có thể lên đến hơn 50 năm nếu được chăm sóc đúng cách.",
+        image: "../assets/vet.png",
+        description1: "Một chú vẹt siêu hài hước, thích nói nhiều và cực kỳ quấn chủ!",
         link: "chi-tiet.html"
     },
     {
-        id: "2",
-        name: "Mèo Cam Quái Xế Phiên Bản A",
-        price: "500 usd",
-        description: "Giống mèo thuần chủng đột biến màu sắc đến từ vùng băng giá Nam Cực.<br>Sở hữu kích thước nhỏ gọn giúp chúng lặn xuống lòng biển sâu săn tôm núi lửa. Do thích nghi khí hậu đặc biệt, cơ thể chúng hoàn toàn không cần đến lớp lông dày.",
-        image: "../assets/meo1.png",
-        description1: "Chú mèo sở hữu bộ lông màu cam rất xinh đẹp, có niềm đam mê mãnh liệt với tốc độ và thích chạy xe máy lượn phố.",
+        id: "a2",
+        name: "Cú Tuyết Đại Hiệp",
+        price: "2000 usd",
+        description: "Đến từ vùng tuyết trắng Bắc Cực lạnh giá.<br>Sở hữu đôi mắt màu vàng đặc trưng và bộ lông trắng muốt giúp ngụy trang hoàn hảo. Khả năng săn mồi ban đêm và bay lượn hoàn toàn không phát ra tiếng động.",
+        image: "../assets/cu-tuyet.png",
+        description1: "Phong thái điềm đạm, lạnh lùng chuẩn soái ca của bầu trời đêm.",
         link: "chi-tiet.html"
     },
     {
-        id: "3",
-        name: "Mèo Thần Biển Siêu Nảy",
-        price: "500 usd",
-        description: "Giống mèo mang trong mình dòng máu hoàng gia của vương quốc Nam Cực cổ đại.<br>Chúng tiến hóa cơ thể nhỏ bé để dễ dàng luồn lách săn bắt tôm núi lửa dưới đáy đại dương sâu thẳm, đồng thời rũ bỏ toàn bộ lông để bơi lội linh hoạt hơn.",
-        image: "../assets/meo2.jpg",
-        description1: "Ngoại hình siêu nảy và đẹp xuất sắc, có nguồn gốc bí ẩn từ một nền văn minh cổ đại ẩn mình dưới lòng nước.",
+        id: "a3",
+        name: "Phượng Hoàng Lửa Cổ Đại",
+        price: "99999 usd",
+        description: "Dòng chim quý hiếm mang dòng máu huyền thoại.<br>Toàn thân tỏa ra năng lượng ấm áp, bộ lông có sắc đỏ cam như những ngọn lửa vĩnh cửu. Đây là biểu tượng của sự tái sinh và may mắn tối thượng.",
+        image: "../assets/phuong-hoang.png",
+        description1: "Ngoại hình phát sáng rực rỡ, mang lại phong thủy cực tốt cho gia chủ.",
         link: "chi-tiet.html"
     },
     {
-        id: "4",
-        name: "Mèo Đại Sứ Thân Thiện (Like Me)",
-        price: "10000 usd",
-        description: "Dòng mèo Nam Cực quý hiếm mang năng lượng tích cực tối thượng.<br>Cơ thể nhỏ nhắn giúp chúng dễ dàng sinh tồn và săn tôm núi lửa dưới đáy biển. Lớp lông đã thoái hóa hoàn toàn để thích nghi với các dòng hải lưu nóng.",
-        image: "../asserts/meo3.jpg",
-        description1: "Hay giơ ngón tay cái để ban phát sự 'Like' dạo khắp nơi. Vì độ thân thiện đạt điểm tuyệt đối nên em này có giá lên tới 10.000 USD!<br>",
-        link: "chi-tiet.html"
-    },
-    {
-        id: "5",
-        name: "Mèo Cam Hóa Ong Ong",
-        price: "500 usd",
-        description: "Giống mèo thuần chủng đột biến màu sắc đến từ vùng băng giá Nam Cực.<br>Sở hữu kích thước nhỏ gọn giúp chúng lặn xuống lòng biển sâu săn tôm núi lửa. Do thích nghi khí hậu đặc biệt, cơ thể chúng hoàn toàn không cần đến lớp lông dày.",
-        image: "../assets/meo4.jpg",
-        description1: "Chú mèo sở hữu bộ lông màu cam rất xinh đẹp, có niềm đam mê mãnh liệt với tốc độ và thích chạy xe máy lượn phố.",
-        link: "chi-tiet.html"
-    },
-    {
-        id: "6",
-        name: "Mèo Cam Quái Xế Phiên Bản C",
-        price: "500 usd",
-        description: "Giống mèo thuần chủng đột biến màu sắc đến từ vùng băng giá Nam Cực.<br>Sở hữu kích thước nhỏ gọn giúp chúng lặn xuống lòng biển sâu săn tôm núi lửa. Do thích nghi khí hậu đặc biệt, cơ thể chúng hoàn toàn không cần đến lớp lông dày.",
-        image: "../assets/images/meo5.jpg",
-        description1: "Chú mèo sở hữu bộ lông màu cam rất xinh đẹp, có niềm đam mê mãnh liệt với tốc độ và thích chạy xe máy lượn phố.",
-        link: "chi-tiet.html"
-    },
-    {
-        id: "7",
-        name: "Mèo Xám Thích Ngủ",
-        price: "500 usd",
-        description: "Giống mèo thuần chủng đột biến màu sắc đến từ vùng băng giá Nam Cực.<br>Sở hữu kích thước nhỏ gọn giúp chúng lặn xuống lòng biển sâu săn tôm núi lửa. Do thích nghi khí hậu đặc biệt, cơ thể chúng hoàn toàn không cần đến lớp lông dày.",
-        image: "../assets/meo6.jpg",
-        description1: "Chú mèo sở hữu bộ lông màu xám siêu đáng yêu, sở thích lớn nhất là ngủ nướng qua ngày.",
+        id: "a4",
+        name: "Đại Bàng Kim Điêu",
+        price: "5000 usd",
+        description: "Chúa tể bầu trời với sải cánh rộng lớn và đôi mắt sắc lẹm.<br>Khả năng lao xuống từ độ cao hàng ngàn mét với tốc độ kinh hoàng để săn mồi. Thích hợp cho những ai đam mê bộ môn huấn luyện chim săn mồi.",
+        image: "../assets/dai-bang.png",
+        description1: "Thần thái dũng mãnh, uy nghiêm, biểu tượng của sức mạnh và tự do.",
         link: "chi-tiet.html"
     }
 ];
 
-// Hàm tạo cấu trúc HTML cho từng sản phẩm ở trang danh sách
-function createItem(obj) {      
-    const listProducts = document.getElementById("product-list");
-    if(!listProducts) return; 
+const Category_Accessories = [
+    {
+        id: "acc1",
+        name: "Lồng Chim Hoàng Gia Mạ Vàng",
+        price: "300 usd",
+        description: "Sản phẩm được làm thủ công tinh xảo, mạ vàng chống gỉ sét.<br>Không gian bên trong rộng rãi, trang bị đầy đủ khay ăn uống bằng sứ cao cấp và cây đậu làm từ gỗ tự nhiên.",
+        image: "../assets/long-chim.png",
+        description1: "Thiết kế sang trọng nâng tầm đẳng cấp cho không gian sống của thú cưng.",
+        link: "chi-tiet.html"
+    },
+    {
+        id: "acc2",
+        name: "Thức Ăn Hạt Hữu Cơ Cao Cấp",
+        price: "25 usd",
+        description: "Hỗn hợp hạt dinh dưỡng nhập khẩu 100% từ Châu Âu.<br>Bao gồm các loại hạt sấy khô, vitamin và khoáng chất giúp bộ lông chim luôn bóng mượt, tăng cường hệ miễn dịch.",
+        image: "../assets/thuc-an.png",
+        description1: "Hương vị thơm ngon, phù hợp cho tất cả các dòng chim và vẹt cảnh.",
+        link: "chi-tiet.html"
+    },
+    {
+        id: "acc3",
+        name: "Xích Đu Gỗ Gặm Nhấm Giải Trí",
+        price: "15 usd",
+        description: "Đồ chơi treo lồng tích hợp chuông nhỏ vui tai.<br>Được làm từ gỗ tự nhiên không chứa chất độc hại, vừa giúp chim giải trí vừa hỗ trợ mài mỏ an toàn.",
+        image: "../assets/do-choi.png",
+        description1: "Giúp các bé chim giải tỏa stress, tha hồ leo trèo và nghịch ngợm cả ngày.",
+        link: "chi-tiet.html"
+    }
+];
+
+// Gộp chung 2 mảng để phục vụ cho việc tìm kiếm ở trang Chi tiết (Detail)
+const AllProducts = [...Category_Animals, ...Category_Accessories];
+
+// Hàm tạo cấu trúc HTML cho từng sản phẩm
+function createItem(obj, containerId) {      
+    const listProducts = document.getElementById(containerId);
+    if (!listProducts) return; 
 
     const item = document.createElement("div");
     item.className = "col-12 col-md-4 mb-4 item position-relative";
@@ -80,7 +84,7 @@ function createItem(obj) {
     const img = document.createElement("img");
     img.setAttribute("src", obj.image);
     img.setAttribute("alt", obj.name);
-    img.setAttribute("style", "border-radius: 30px; width: 100%; height: auto;");
+    img.setAttribute("style", "border-radius: 30px; width: 100%; height: 250px; object-fit: cover;");
     containerImage.appendChild(img);
 
     const containerInfo = document.createElement("div");
@@ -91,7 +95,7 @@ function createItem(obj) {
 
     const price = document.createElement("p");
     price.setAttribute("class", "text-danger font-weight-bold");
-    price.innerHTML = obj.price + " / con"; 
+    price.innerHTML = obj.price; 
 
     const description = document.createElement("p");
     description.setAttribute("class", "card-text");
@@ -112,19 +116,24 @@ function createItem(obj) {
     listProducts.appendChild(item);
 }
 
-// Hàm chạy vòng lặp tải toàn bộ sản phẩm
-function loadAllProducts(objArray) {
-    for (let i = 0; i < objArray.length; i++) {
-        createItem(objArray[i]); 
+// Hàm chạy vòng lặp tải danh sách sản phẩm theo từng khu vực
+function loadProductsToContainer(objArray, containerId) {
+    const container = document.getElementById(containerId);
+    if (container) {
+        container.innerHTML = ""; // Xóa dữ liệu cũ (nếu có)
+        for (let i = 0; i < objArray.length; i++) {
+            createItem(objArray[i], containerId); 
+        }
     }
 }
 
-// Hàm xử lý hiển thị chi tiết sản phẩm và gợi ý sản phẩm tương tự
+// Hàm xử lý hiển thị chi tiết sản phẩm và gợi ý sản phẩm liên quan
 function loadProductDetail() {
     const urlParams = new URLSearchParams(window.location.search);
     const productId = urlParams.get('id');
 
-    const currentProduct = Products.find(item => item.id === productId);
+    // Tìm kiếm sản phẩm trong toàn bộ danh mục gộp chung
+    const currentProduct = AllProducts.find(item => item.id === productId);
 
     if (currentProduct) {
         document.title = currentProduct.name;
@@ -136,7 +145,7 @@ function loadProductDetail() {
         if(name) name.innerHTML = currentProduct.name;
 
         const price = document.getElementById("detail-price");
-        if(price) price.innerHTML = currentProduct.price + " / con";
+        if(price) price.innerHTML = currentProduct.price;
 
         const desc = document.getElementById("detail-description");
         if(desc) desc.innerHTML = currentProduct.description;
@@ -147,7 +156,9 @@ function loadProductDetail() {
         // ================= XỬ LÝ SẢN PHẨM TƯƠNG TỰ =================
         const relatedContainer = document.getElementById("related-products");
         if (relatedContainer) {
-            const filteredProducts = Products.filter(item => item.id !== productId);
+            // Lọc bỏ sản phẩm hiện tại ra khỏi danh sách gợi ý
+            const filteredProducts = AllProducts.filter(item => item.id !== productId);
+            // Lấy ngẫu nhiên hoặc lấy 3 sản phẩm đầu tiên để gợi ý
             const displayProducts = filteredProducts.slice(0, 3); 
 
             let htmlContent = '';
@@ -158,7 +169,7 @@ function loadProductDetail() {
                             <img src="${prod.image}" alt="${prod.name}" class="card-img-top" style="height: 180px; object-fit: cover;">
                             <div class="card-body d-flex flex-column">
                                 <h6 class="card-title font-weight-bold text-dark">${prod.name}</h6>
-                                <p class="card-text text-danger font-weight-bold mb-2">${prod.price} / con</p>
+                                <p class="card-text text-danger font-weight-bold mb-2">${prod.price}</p>
                                 <a href="${prod.link}?id=${prod.id}" class="btn btn-outline-danger btn-block mt-auto" style="font-size: 14px; border-radius: 20px;">Xem Ngay</a>
                             </div>
                         </div>
@@ -173,7 +184,7 @@ function loadProductDetail() {
         if(container) {
             container.innerHTML = `
                 <div class="col-12 text-center py-5">
-                    <h3>⚠️ Không tìm thấy thông tin chú mèo này!</h3>
+                    <h3>⚠️ Không tìm thấy thông tin sản phẩm này!</h3>
                     <a href="index.html" class="btn btn-primary mt-3">Quay lại cửa hàng</a>
                 </div>`;
         }
@@ -182,12 +193,17 @@ function loadProductDetail() {
 
 // ================= PHÂN LUỒNG KHỞI CHẠY ĐỘNG TẠI ĐÂY =================
 window.addEventListener('DOMContentLoaded', () => {
-    // Nếu trang hiện tại có khu vực danh sách -> Gọi hàm hiển thị danh sách
-    if (document.getElementById("product-list")) {
-        loadAllProducts(Products);
+    // 1. Tải danh sách Động vật có cánh nếu có khu vực hiển thị tương ứng
+    if (document.getElementById("animal-list")) {
+        loadProductsToContainer(Category_Animals, "animal-list");
+    }
+
+    // 2. Tải danh sách Đồ dùng cần thiết nếu có khu vực hiển thị tương ứng
+    if (document.getElementById("accessory-list")) {
+        loadProductsToContainer(Category_Accessories, "accessory-list");
     }
     
-    // Nếu trang hiện tại có khu vực chi tiết -> Gọi hàm hiển thị chi tiết và gợi ý
+    // 3. Tải thông tin trang Chi tiết sản phẩm
     if (document.getElementById("detail-container")) {
         loadProductDetail();
     }
