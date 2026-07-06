@@ -284,3 +284,30 @@ footer {
     border-radius: 20px;
     overflow: hidden;
 }
+#accessory-list .image {
+    width: 100%;
+    max-width: 300px;     /* KHỐNG CHẾ ĐỘ RỘNG: Chỉnh số này nhỏ xuống nếu muốn ảnh phụ kiện nhỏ hơn nữa */
+    height: 200px;        /* CHIỀU CAO CỐ ĐỊNH: Đảm bảo hộp thức ăn và lồng chim cao bằng nhau */
+    margin: 0 auto 15px;  /* Căn tấm ảnh ra chính giữa khối sản phẩm */
+    overflow: hidden;     /* Giữ ảnh gọn gàng bên trong, không bị tràn viền */
+    border-radius: 15px;  /* Bo tròn nhẹ các góc ảnh */
+    background-color: blue; /* Tạo nền xám nhẹ phía sau nếu ảnh có nền trắng */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 2. Cấu hình trực tiếp cho hình ảnh phụ kiện */
+#accessory-list .product-img,
+#accessory-list .image img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain !important; /* Dùng 'contain' thay vì 'cover' để thấy trọn vẹn phom lồng chim và bao bì thức ăn không bị cắt mất góc */
+    padding: 5px;          /* Tạo khoảng cách nhẹ giữa ảnh và viền khung */
+    transition: transform 0.2s ease;
+}
+
+/* 3. Hiệu ứng nhấp nháy hoặc zoom nhẹ khi di chuột vào món phụ kiện */
+#accessory-list .item:hover .image img {
+    transform: scale(1.05);
+}

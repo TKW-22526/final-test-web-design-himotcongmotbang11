@@ -182,31 +182,133 @@ const Category_Animals = [
 ];
 
 const Category_Accessories = [
+    // ================= DÂN CHƠI LỒNG CHIM =================
     {
         id: "acc1",
-        name: "Lồng Chim Hoàng Gia Mạ Vàng",
-        price: "300 usd",
-        description: "Sản phẩm được làm thủ công tinh xảo, mạ vàng chống gỉ sét.<br>Không gian bên trong rộng rãi, trang bị đầy đủ khay ăn uống bằng sứ cao cấp và cây đậu làm từ gỗ tự nhiên.",
-        image: "../assets/long-chim.png",
-        description1: "Thiết kế sang trọng nâng tầm đẳng cấp cho không gian sống của thú cưng.",
+        name: "Lồng Tre Già Đục Chạm Thủ Công (Mẫu 1)",
+        price: "120 usd",
+        description: "Lồng làm bằng chất liệu tre già tuyển chọn, chống mối mọt.<br>Thiết kế phom cao, nan khít thích hợp cho các dòng chim nhỏ và trung bình.",
+        image: "../assets/thuc/long1.jpg",
+        description1: "Phom dáng cổ điển, tre già lên nước cực kỳ mịn và bền.",
         link: "chi-tiet.html"
     },
     {
         id: "acc2",
-        name: "Thức Ăn Hạt Hữu Cơ Cao Cấp",
-        price: "25 usd",
-        description: "Hỗn hợp hạt dinh dưỡng nhập khẩu 100% từ Châu Âu.<br>Bao gồm các loại hạt sấy khô, vitamin và khoáng chất giúp bộ lông chim luôn bóng mượt, tăng cường hệ miễn dịch.",
-        image: "../assets/thuc-an.png",
-        description1: "Hương vị thơm ngon, phù hợp cho tất cả các dòng chim và vẹt cảnh.",
+        name: "Lồng Vuông Mun Đen Cao Cấp (Mẫu 2)",
+        price: "180 usd",
+        description: "Kiểu dáng vuông cứng cáp kết hợp móc treo chạm khắc tinh xảo.<br>Tạo không gian di chuyển thoải mái và sang trọng cho chú chim của bạn.",
+        image: "../assets/thuc/long2.jpg",
+        description1: "Sắc đen huyền bí, phong cách hiện đại và vô cùng chắc chắn.",
         link: "chi-tiet.html"
     },
     {
         id: "acc3",
-        name: "Xích Đu Gỗ Gặm Nhấm Giải Trí",
+        name: "Lồng Vuông Chào Mào Gỗ Tự Nhiên (Mẫu 5)",
+        price: "150 usd",
+        description: "Thiết kế chuẩn chỉnh dành riêng cho các dòng Chào Mào đấu.<br>Bệ đỡ hạ thấp giúp tối ưu không gian bay nhảy và khoe dáng chim.",
+        image: "../assets/thuc/long5.jpg",
+        description1: "Phom đấu chuẩn, nan đều và bệ lồng được chạm khắc sắc nét.",
+        link: "chi-tiet.html"
+    },
+    {
+        id: "acc4",
+        name: "Lồng Tắm Sắc Màu Nan Nhuyễn (Mẫu 6)",
+        price: "95 usd",
+        description: "Mẫu lồng gọn nhẹ với khay chứa nước bên dưới tiện lợi.<br>Hỗ trợ chim tắm rửa hằng ngày giúp bộ lông luôn sạch sẽ và óng mượt.",
+        image: "../assets/thuc/long6.jpg",
+        description1: "Tiện dụng, dễ lau chùi vệ sinh và cực kỳ an toàn cho chim.",
+        link: "chi-tiet.html"
+    },
+    {
+        id: "acc5",
+        name: "Lồng Tròn Sắt Sơn Tĩnh Điện (Mẫu 7)",
+        price: "80 usd",
+        description: "Chất liệu hợp kim bền bỉ sơn tĩnh điện chống rỉ sét tuyệt đối.<br>Không gian hình vòm rộng rãi, dễ dàng treo ở mọi khu vực ban công.",
+        image: "../assets/thuc/long7.jpg",
+        description1: "Bền bỉ vượt thời gian, chống chịu tốt với thời tiết nắng mưa.",
+        link: "chi-tiet.html"
+    },
+    {
+        id: "acc6",
+        name: "Lồng Khuyên Tre Giao Chỉ (Mẫu 8)",
+        price: "110 usd",
+        description: "Kích thước nhỏ gọn tinh tế với phần vanh được bo tròn mượt mà.<br>Thích hợp cho các loài chim nhỏ như khuyên, yến hót hay sắc ô mễ.",
+        image: "../assets/thuc/long8.jpg",
+        description1: "Nhỏ gọn, tinh tế, phom tròn chuẩn mực cho chim nhỏ.",
+        link: "chi-tiet.html"
+    },
+
+    // ================= DINH DƯỠNG & THỨC ĂN =================
+    {
+        id: "acc7",
+        name: "Cám Tổng Hợp Cao Cấp (Mẫu 1)",
         price: "15 usd",
-        description: "Đồ chơi treo lồng tích hợp chuông nhỏ vui tai.<br>Được làm từ gỗ tự nhiên không chứa chất độc hại, vừa giúp chim giải trí vừa hỗ trợ mài mỏ an toàn.",
-        image: "../assets/do-choi.png",
-        description1: "Giúp các bé chim giải tỏa stress, tha hồ leo trèo và nghịch ngợm cả ngày.",
+        description: "Công thức độc quyền giúp bổ sung năng lượng nhanh chóng.<br>Giúp chim giữ lửa tốt, hót líu lo cả ngày và tăng cường hệ tiêu hóa.",
+        image: "../assets/thuc/thuc1.jpg",
+        description1: "Kích hót, ổn định phong độ và nuôi dưỡng sắc lông cực tốt.",
+        link: "chi-tiet.html"
+    },
+    {
+        id: "acc8",
+        name: "Thức Ăn Hạt Hỗn Hợp Cho Chim Cảnh (Mẫu 2)",
+        price: "12 usd",
+        description: "Bao gồm các loại ngũ cốc tự nhiên sấy khô nguyên quả.<br>Cung cấp đầy đủ hàm lượng chất xơ và khoáng chất thiết yếu.",
+        image: "../assets/thuc/thuc2.jpg",
+        description1: "Dinh dưỡng cân bằng, phù hợp cho nhiều dòng chim hót.",
+        link: "chi-tiet.html"
+    },
+    {
+        id: "acc9",
+        name: "Hạt Trái Cây Sấy Khô FruitBlend (Mẫu 3)",
+        price: "25 usd",
+        description: "Nhập khẩu chính hãng với hương vị trái cây thơm ngon kích thích vị giác.<br>Giúp bổ sung vitamin tự nhiên, tăng đề kháng cho các dòng vẹt và chim lớn.",
+        image: "../assets/thuc/thuc3.jpg",
+        description1: "Sắc màu bắt mắt, giàu Vitamin và khoáng chất tự nhiên.",
+        link: "chi-tiet.html"
+    },
+    {
+        id: "acc10",
+        name: "Thức Ăn Hạt Đóng Hộp Nutri-Dinh Dưỡng (Mẫu 4)",
+        price: "30 usd",
+        description: "Sản phẩm đóng hộp kín giúp bảo quản hạt luôn giòn và thơm ngon.<br>Bổ sung thêm tinh chất dầu cá cho bộ lông bóng mượt như lụa.",
+        image: "../assets/thuc/thuc4.jpg",
+        description1: "Quy cách đóng hộp sang trọng, bảo quản hoàn hảo, dinh dưỡng cao.",
+        link: "chi-tiet.html"
+    },
+    {
+        id: "acc11",
+        name: "Ngũ Cốc Manitoba Nhập Khẩu (Mẫu 5)",
+        price: "35 usd",
+        description: "Dòng sản phẩm cao cấp từ thương hiệu Manitoba nổi tiếng.<br>Đạt tiêu chuẩn organic châu Âu giúp chim phát triển toàn diện từ thể chất đến giọng hót.",
+        image: "../assets/thuc/thuc5.jpg",
+        description1: "Tiêu chuẩn Châu Âu, giúp chim khỏe mạnh từ sâu bên trong.",
+        link: "chi-tiet.html"
+    },
+    {
+        id: "acc12",
+        name: "Cám Đấu Đặc Trị Cho Chim Thi Hót (Mẫu 6)",
+        price: "20 usd",
+        description: "Hàm lượng protein cực cao từ trứng gà và cào cào tươi sấy mịn.<br>Thúc đẩy quá trình thay lông nhanh và giúp chim nhanh lên lửa đấu.",
+        image: "../assets/thuc6.jpg",
+        description1: "Bí quyết giúp chiến binh của bạn luôn đạt phong độ đỉnh cao.",
+        link: "chi-tiet.html"
+    },
+    {
+        id: "acc13",
+        name: "Cám Dinh Dưỡng Thảo Mộc Thúy Tuấn (Mẫu 7)",
+        price: "10 usd",
+        description: "Sự kết hợp giữa các loại ngũ cốc và vị thuốc bắc thảo mộc ôn hòa.<br>Giúp chim thanh nhiệt cơ thể, tiêu hóa tốt và không bị xù lông khi đổi mùa.",
+        image: "../assets/thuc/thuc7.jpg",
+        description1: "Thành phần thảo mộc tự nhiên, an toàn và mát cho cơ thể chim.",
+        link: "chi-tiet.html"
+    },
+    {
+        id: "acc14",
+        name: "Hạt Trộn Trùng Huyết Sấy Khô Bloodworm Mix (Mẫu 8)",
+        price: "28 usd",
+        description: "Sản phẩm đột phá kết hợp trùng huyết sấy thăng hoa giàu đạm.<br>Giải pháp thay thế mồi tươi hoàn hảo, giúp chim tăng cơ và hót khỏe.",
+        image: "../assets/thuc/thuc8.jpg",
+        description1: "Nguồn đạm động vật đậm đặc, kích thích chim ăn ngon miệng.",
         link: "chi-tiet.html"
     }
 ];
@@ -271,7 +373,7 @@ function loadProductsToContainer(objArray, containerId) {
     }
 }
 
-// Hàm xử lý hiển thị chi tiết sản phẩm và gợi ý sản phẩm liên quan
+/// Hàm xử lý hiển thị chi tiết sản phẩm và gợi ý sản phẩm liên quan theo nhóm
 function loadProductDetail() {
     const urlParams = new URLSearchParams(window.location.search);
     const productId = urlParams.get('id');
@@ -297,13 +399,27 @@ function loadProductDetail() {
         const style = document.getElementById("detail-style");
         if(style) style.innerHTML = currentProduct.description1;
 
-        // ================= XỬ LÝ SẢN PHẨM TƯƠNG TỰ =================
+        // ================= XỬ LÝ SẢN PHẨM TƯƠNG TỰ THÔNG MINH =================
         const relatedContainer = document.getElementById("related-products");
         if (relatedContainer) {
-            // Lọc bỏ sản phẩm hiện tại ra khỏi danh sách gợi ý
-            const filteredProducts = AllProducts.filter(item => item.id !== productId);
-            // Lấy ngẫu nhiên hoặc lấy 3 sản phẩm đầu tiên để gợi ý
-            const displayProducts = filteredProducts.slice(0, 3); 
+            let relatedPool = [];
+
+            // Thuật toán phân nhóm: Kiểm tra xem sản phẩm hiện tại thuộc mảng nào
+            const isAnimal = Category_Animals.some(item => item.id === productId);
+            
+            if (isAnimal) {
+                // Nếu là CHIM: Lọc ra các con chim khác (loại bỏ con hiện tại)
+                relatedPool = Category_Animals.filter(item => item.id !== productId);
+            } else {
+                // Nếu là PHỤ KIỆN: Lọc ra các phụ kiện khác (loại bỏ món hiện tại)
+                relatedPool = Category_Accessories.filter(item => item.id !== productId);
+            }
+
+            // Sắp xếp ngẫu nhiên danh sách đã lọc để mỗi lần F5 sẽ ra các gợi ý mới mẻ
+            const shuffledRelated = relatedPool.sort(() => 0.5 - Math.random());
+
+            // Trích xuất lấy đúng 3 sản phẩm cùng nhóm để hiển thị
+            const displayProducts = shuffledRelated.slice(0, 3); 
 
             let htmlContent = '';
             displayProducts.forEach(prod => {
@@ -334,7 +450,6 @@ function loadProductDetail() {
         }
     }
 }
-
 // ================= PHÂN LUỒNG KHỞI CHẠY ĐỘNG TẠI ĐÂY =================
 window.addEventListener('DOMContentLoaded', () => {
     // 1. Tải danh sách Động vật có cánh nếu có khu vực hiển thị tương ứng
