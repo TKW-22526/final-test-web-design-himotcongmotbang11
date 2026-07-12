@@ -1,0 +1,26 @@
+<div class="container my-5">
+    <h2>Giỏ hàng của bạn</h2>
+    <table class="table">
+        <thead><tr><th>Tên</th><th>Giá</th><th>Hành động</th></tr></thead>
+        <tbody id="cart-items"></tbody>
+    </table>
+</div>
+
+<script>
+    const cart = JSON.parse(localStorage.getItem('myCart')) || [];
+    const tbody = document.getElementById('cart-items');
+    
+    cart.forEach(item => {
+        tbody.innerHTML += `<tr>
+            <td>${item.name}</td>
+            <td>${item.price}</td>
+            <td><button class="btn btn-sm btn-danger" onclick="removeItem('${item.id}')">Xóa</button></td>
+        </tr>`;
+    });
+
+    function removeItem(id) {
+        const newCart = cart.filter(item => item.id !== id);
+        localStorage.setItem('myCart', JSON.stringify(newCart));
+        location.reload(); // Tải lại trang để cập nhật danh sách
+    }
+</script>s
