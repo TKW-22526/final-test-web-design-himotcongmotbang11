@@ -13,22 +13,72 @@
 
     <!-- THANH MENU (NAVBAR) -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
-        <div class="container">
-            <a class="navbar-brand font-weight-bold text-danger" href="../index.html">🦜 SkyWings Store</a>
-            <div class="navbar-nav ml-auto flex-row">
-                <a class="nav-link px-3" href="../index.html">Trang chủ</a>
-                <a class="nav-link px-3" href="san-pham.html">Sản phẩm</a>
-                <a class="nav-link px-3" href="phu-kien.html">Phụ Kiện</a>
-                <!-- Chỉ giữ class active duy nhất ở ô Liên hệ -->
-                <a class="nav-link active font-weight-bold px-3" href="lien-he.html">Liên hệ</a>
-            </div>
+    <div class="container">
+        <a class="navbar-brand font-weight-bold text-danger" href="../index.html">🦜 SkyWings Store</a>
+        <div class="navbar-nav ml-auto flex-row align-items-center">
+            <a class="nav-link px-3" href="../index.html">Trang chủ</a>
+            <a class="nav-link px-3" href="san-pham.html">Sản phẩm</a>
+            <a class="nav-link px-3" href="phu-kien.html">Phụ Kiện</a>
+            <a class="nav-link active font-weight-bold px-3" href="lien-he.html">Liên hệ</a>
+            
         </div>
-    </nav>
+    </div>
+</nav>
+<div class="container my-5">
+    <h2 class="font-weight-bold mb-4">Giỏ hàng của bạn</h2>
+    <table class="table bg-white shadow-sm">
+        <thead>
+            <tr>
+                <th>Sản phẩm</th>
+                <th>Giá</th>
+                <th>Thao tác</th>
+            </tr>
+        </thead>
+        <tbody id="cart-items"> </tbody>
+    </table>
+    <div class="text-right">
+       
+    </div>
+</div>
 
+<script src="../js/script.js"></script>
+<script>
+    // Hàm hiển thị giỏ hàng riêng cho trang này
+    function displayCart() {
+        const cartIds = JSON.parse(localStorage.getItem('myCart')) || [];
+        const container = document.getElementById("cart-items");
+        let total = 0;
+        
+        container.innerHTML = "";
+        
+        cartIds.forEach(id => {
+            const product = AllProducts.find(p => p.id === id);
+            if (product) {
+                container.innerHTML += `
+                    <tr>
+                        <td>${product.name}</td>
+                        <td>${product.price}</td>
+                        <td><button class="btn btn-sm btn-danger" onclick="removeFromCart('${product.id}')">Xóa</button></td>
+                    </tr>
+                `;
+            }
+        });
+    }
+
+    function removeFromCart(id) {
+        let cart = JSON.parse(localStorage.getItem('myCart')) || [];
+        cart = cart.filter(item => item !== id);
+        localStorage.setItem('myCart', JSON.stringify(cart));
+        displayCart();
+        updateCartCount();
+    }
+
+    window.onload = displayCart;
+</script>
     <!-- NỘI DUNG FORM LIÊN HỆ -->
     <main class="container my-5" style="max-width: 600px;">
         <div class="card p-4 shadow-sm border-0" style="border-radius: 20px;">
-            <h2 class="font-weight-bold text-center mb-2 text-dark">Liên Hệ Đặt Lịch Xem Chim</h2>
+            <h2 class="font-weight-bold text-center mb-2 text-light">Liên Hệ Đặt Lịch Xem Chim</h2>
             <p class="text-muted text-center mb-4">Để lại thông tin, SkyWings sẽ gọi điện hỗ trợ bạn trong vòng 15 phút!</p>
             
             <form onsubmit="event.preventDefault(); alert('Cảm ơn bạn! Đội ngũ chuyên viên SkyWings Store sẽ sớm liên hệ tư vấn siêu phẩm chim cảnh tới bạn.'); this.reset();">

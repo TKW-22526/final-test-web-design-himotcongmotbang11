@@ -1,30 +1,33 @@
-/* ==========================================================================
-   1. CẤU HÌNH CHUNG & PHÔNG CHỮ (CYBER VIBE)
-   ========================================================================== */
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: 'Plus Jakarta Sans', sans-serif;
-    background-color: #0b0f19; /* Nền tối xanh đen huyền bí */
+    background-color: #0b0f19 !important; /* Nền tối xanh đen huyền bí đồng bộ toàn website */
     color: #f1f5f9; /* Chữ trắng sáng */
     overflow-x: hidden;
 }
 
-/* Tối ưu hóa độ hiển thị của tất cả văn bản phụ (Chống chói nhức mắt) */
+/* Văn bản phụ - Chống chói nhức mắt trên nền tối */
 .text-muted, 
 .card-text, 
 p#detail-style, 
 p#detail-description,
-.about-card p.text-muted {
-    color: #cbd5e1 !important; /* Màu xám bạc cao cấp, hiển thị cực rõ trên nền tối */
+.about-card p.text-muted,
+.card-body p {
+    color: #cbd5e1 !important; /* Màu xám bạc cao cấp, hiển thị cực rõ */
     opacity: 0.95;
 }
 
-/* Ép tất cả tiêu đề lớn nhỏ có màu sáng mặc định kèm bóng đổ nhẹ để nổi bật */
+/* Ép tất cả tiêu đề có màu sáng kèm bóng đổ nhẹ để nổi bật */
 h1, h2, h3, h4, h5, h6,
 .navbar-brand,
 .item .info h4,
-.about-card h4 {
+.about-card h4,
+.card-body h5 {
     color: #ffffff !important;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
@@ -34,6 +37,7 @@ h1, h2, h3, h4, h5, h6,
    ========================================================================== */
 .navbar {
     backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     background-color: rgba(11, 15, 25, 0.8) !important; /* Trong suốt nhìn xuyên thấu */
     border-bottom: 1px solid rgba(99, 102, 241, 0.2); /* Viền tím neon nhẹ */
     transition: all 0.3s ease;
@@ -46,13 +50,13 @@ h1, h2, h3, h4, h5, h6,
 
 .nav-link {
     font-weight: 500;
-    color: #cbd5e1 !important; /* Tăng độ sáng để dễ nhìn ban đêm */
+    color: #cbd5e1 !important;
     position: relative;
     transition: color 0.3s ease;
 }
 
 .nav-link:hover, .nav-link.active {
-    color: #a855f7 !important; /* Sáng bừng lên sắc tím khi hover */
+    color: #a855f7 !important; /* Sáng bừng sắc tím khi hover */
 }
 
 /* Hiệu ứng gạch chân phát sáng khi hover */
@@ -73,7 +77,7 @@ h1, h2, h3, h4, h5, h6,
 }
 
 /* ==========================================================================
-   3. KHU VỰC HERO (BANNER ĐÈN NEON - ĐÃ SỬA CHÓI TIÊU ĐỀ)
+   3. KHU VỰC HERO (BANNER ĐÈN NEON)
    ========================================================================== */
 .hero-section {
     background: radial-gradient(circle at top right, rgba(99, 102, 241, 0.15), transparent),
@@ -83,22 +87,20 @@ h1, h2, h3, h4, h5, h6,
     border-bottom: 1px solid rgba(168, 85, 247, 0.2);
 }
 
-/* Sửa lỗi lóa/chói cho chữ Tiêu đề chính */
-.hero-section h1, 
-.hero-section h1.text-dark { 
+/* Tiêu đề chính màu nhũ tương Pastel sáng hẳn */
+.hero-section h1 { 
     font-size: 3rem;
     letter-spacing: -1px;
     margin-bottom: 15px;
-    background: linear-gradient(135deg, #a5b4fc 0%, #e9d5ff 100%) !important; /* Màu nhũ tương Pastel sáng hẳn */
+    background: linear-gradient(135deg, #a5b4fc 0%, #e9d5ff 100%) !important;
     -webkit-background-clip: text !important;
     -webkit-text-fill-color: transparent !important;
     font-weight: 700;
     filter: drop-shadow(0 2px 8px rgba(99, 102, 241, 0.4)); /* Đổ bóng phát quang */
 }
 
-/* Sửa lỗi chói cho dòng mô tả phụ trong banner */
-.hero-section p.lead,
-.hero-section .text-muted {
+/* Dòng mô tả phụ trong banner */
+.hero-section p.lead {
     color: #cbd5e1 !important; 
     font-size: 1.15rem;
     opacity: 0.9;
@@ -129,71 +131,110 @@ h1, h2, h3, h4, h5, h6,
 }
 
 /* ==========================================================================
-   5. THIẾT KẾ CARD SẢN PHẨM (XANH TÍM CYBER)
+   5. THANH BỘ LỌC SIDEBAR (SIDEBAR FILTER NEON)
    ========================================================================== */
-.item {
-    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+aside .card {
+    background: rgba(23, 17, 35, 0.7) !important; /* Nền tím đen trong suốt dạng Glassmorphism */
+    border: 1px solid rgba(168, 85, 247, 0.25) !important; /* Viền tím Neon nhạt */
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
 }
 
-.item:hover {
-    transform: translateY(-8px);
+aside .form-control, 
+aside .form-select {
+    border: 1px solid rgba(168, 85, 247, 0.2) !important;
+    padding: 10px 15px;
+    font-size: 14px;
+    background-color: #0f0a1c !important; /* Nền ô nhập liệu tím tối sâu thẳm */
+    color: #f1f5f9 !important;
+    transition: all 0.2s ease-in-out;
 }
 
-/* Khung chứa ảnh sản phẩm */
-.item .image {
-    position: relative;
-    overflow: hidden;
-    border-radius: 24px;
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    background-color: #111827; 
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+aside .form-control:focus, 
+aside .form-select:focus {
+    border-color: #a855f7 !important; /* Bung sắc tím phát quang khi focus */
+    box-shadow: 0 0 0 0.25rem rgba(168, 85, 247, 0.35) !important;
 }
 
-.item:hover .image {
-    border-color: rgba(99, 102, 241, 0.6);
-    box-shadow: 0 10px 30px rgba(99, 102, 241, 0.2);
-}
-
-.item .image img {
-    transition: transform 0.6s ease, filter 0.3s ease;
-    filter: brightness(0.9);
-}
-
-.item:hover .image img {
-    transform: scale(1.06);
-    filter: brightness(1.1);
-}
-
-.item .info {
-    padding: 20px 10px 10px 10px;
-}
-
-/* Tên sản phẩm trên Card */
-.item .info h4 {
-    font-size: 1.2rem;
+/* Nút Xóa bộ lọc phong cách Cyber */
+#btn-reset {
+    font-size: 14px;
     font-weight: 600;
-    margin-bottom: 8px;
+    padding: 10px;
+    border-color: rgba(168, 85, 247, 0.4) !important;
+    color: #c084fc !important;
+    background-color: rgba(168, 85, 247, 0.05);
+    transition: all 0.3s ease;
+}
+
+#btn-reset:hover {
+    background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%) !important;
+    color: #ffffff !important;
+    box-shadow: 0 0 15px rgba(168, 85, 247, 0.4);
+}
+
+/* ==========================================================================
+   6. THIẾT KẾ GRID CARD SẢN PHẨM & HIỆU ỨNG PHÁT SÁNG NEON
+   ========================================================================== */
+.card {
+    background: rgba(19, 14, 31, 0.85) !important; /* Nền card tím huyền bí */
+    border: 1px solid rgba(139, 92, 246, 0.15) !important;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), border-color 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(168, 85, 247, 0.6) !important; /* Viền bừng sáng tím */
+    box-shadow: 0 15px 35px rgba(168, 85, 247, 0.25) !important; /* Quầng sáng hắt dưới chân */
+}
+
+/* Fix chiều cao và hiệu ứng ảnh sản phẩm */
+.card img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover; /* Cắt ảnh khít khung, không bị kéo dãn */
+    transition: transform 0.6s ease, filter 0.3s ease;
+    filter: brightness(0.85); /* Hơi tối nhẹ để ẩn vào nền */
+}
+
+.card:hover img {
+    transform: scale(1.05);
+    filter: brightness(1.05); /* Sáng bừng lên khi hover */
+}
+
+/* Tên sản phẩm chuyển màu hồng tím Neon khi hover */
+.card .card-body h5 {
+    transition: color 0.2s ease;
+}
+
+.card:hover .card-body h5 {
+    color: #f472b6 !important; /* Hồng Neon nổi bật */
 }
 
 /* Giá tiền màu Gradient Tím Hồng rực rỡ */
+.card .text-danger,
 .item .info .text-danger {
     font-size: 1.25rem;
     font-weight: 700 !important;
-    background: linear-gradient(90deg, #818cf8, #c084fc);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    background: linear-gradient(90deg, #818cf8, #c084fc) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
     margin-bottom: 10px;
     display: inline-block;
 }
 
-/* Nút bấm mua/chi tiết Đổ màu Gradient độc quyền */
+/* Nút xem chi tiết (Gradient Tím Lam huyền bí) */
+.btn-danger,
 .item .info .btn-danger {
-    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
-    color: #ffffff;
-    border: none;
+    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%) !important;
+    color: #ffffff !important;
+    border: none !important;
     border-radius: 14px;
-    padding: 12px 20px;
+    padding: 10px 20px;
     font-size: 0.9rem;
     font-weight: 600;
     letter-spacing: 0.5px;
@@ -201,27 +242,65 @@ h1, h2, h3, h4, h5, h6,
     box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3);
 }
 
+.btn-danger:hover,
 .item .info .btn-danger:hover {
-    background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+    background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%) !important;
     box-shadow: 0 12px 20px rgba(99, 102, 241, 0.4);
     transform: translateY(-2px);
 }
 
+.btn-danger:active {
+    transform: scale(0.98);
+}
+
 /* ==========================================================================
-   6. ĐƯỜNG PHÂN CÁCH & TRANG CHI TIẾT SẢN PHẨM
+   7. CẤU HÌNH ĐẶC BIỆT FIX ẢNH PHỤ KIỆN & THỨC ĂN
    ========================================================================== */
-hr {
-    border-top: 1px solid rgba(255, 255, 255, 0.05);
+#accessory-list .card img {
+    width: 100% !important;
+    height: 200px !important;
+    object-fit: contain !important; /* Giúp hiển thị trọn vẹn phom lồng và bao bì cám */
+    background-color: #111827 !important; /* Lớp nền tối mịn phía sau khoảng trắng ảnh */
+    padding: 10px;
 }
 
-h4.text-secondary, 
-h2.text-dark {
-    color: #e2e8f0 !important; /* Làm sáng tiêu đề danh mục */
+/* ==========================================================================
+   8. FIX TRANG CHI TIẾT SẢN PHẨM & SẢN PHẨM GỢI Ý (RELATED)
+   ========================================================================== */
+#detail-image {
+    width: 100%;
+    max-width: 400px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin: 0 auto;
+    display: block;
+    border: 1px solid rgba(99, 102, 241, 0.3);
 }
 
-/* Các tiêu đề đặc trưng (Phong cách, Nguồn gốc) ở trang chi tiết */
+#detail-container .image {
+    max-width: 420px;
+    margin: 0 auto;
+}
+
+/* Hàng sản phẩm gợi ý "Có Thể Bạn Cũng Sẽ Thích" */
+#related-products .card {
+    max-width: 280px;
+    margin: 0 auto;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#related-products .card img {
+    width: 100%;
+    height: 180px !important;
+    object-fit: cover !important;
+    border-radius: 15px 15px 0 0 !important;
+}
+
+/* Tiêu đề phân khu đặc trưng (Phong cách, Nguồn gốc, Y tế) */
 h5.text-secondary {
-    color: #a855f7 !important; /* Đổi hẳn sang Tím Neon để phân tách vùng đọc */
+    color: #a855f7 !important; /* Màu Tím Neon */
     font-weight: 650 !important;
     margin-top: 20px;
 }
@@ -242,7 +321,25 @@ h5.text-secondary {
 }
 
 /* ==========================================================================
-   7. CHÂN TRANG (FOOTER ĐEN TUYỀN CHẤT LÌ)
+   9. HUY HIỆU Y TẾ & ĐƯỜNG VIỀN
+   ========================================================================== */
+.badge {
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+.bg-success {
+    background-color: #10b981 !important; /* Xanh ngọc lục bảo */
+}
+.bg-warning {
+    background-color: #f59e0b !important; /* Vàng hổ phách */
+}
+
+hr, .border-bottom {
+    border-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+/* ==========================================================================
+   10. CHÂN TRANG (FOOTER ĐEN TUYỀN CHẤT LÌ)
    ========================================================================== */
 footer {
     background-color: #070a12 !important;
@@ -252,62 +349,16 @@ footer {
     margin-top: 90px;
     border-top: 1px solid rgba(99, 102, 241, 0.1);
 }
-#detail-image {
-    width: 100% ;
-    max-width: 400px ; /* Thu nhỏ chiều rộng tối đa lại (gốc của bạn là 100% tràn khung) */
-    height: 450px ;    /* Cố định chiều cao cho ảnh cân đối */
-    object-fit: cover ;/* Giúp ảnh không bị méo hay kéo dãn */
-    border-radius: 20px ;
-    margin: 0 auto;              /* Căn giữa tấm ảnh */
-    display: block;
-}
 
-/* Khung chứa viền đen bao quanh ảnh lớn (Nếu muốn thu nhỏ cả cái khung) */
-#detail-container .image {
-    max-width: 420px;
-    margin: 0 auto;
-}
-
-/* 2. Fix ảnh của cụm "Có Thể Bạn Cũng Sẽ Thích" (Related Products) */
-#related-products .card img, 
-#related-products .product-img {
-    width: 100% ;
-    height: 180px !;    /* Cố định chiều cao ảnh gợi ý bằng nhau, không bị to nhỏ lệch dòng */
-    object-fit: cover !important;/* Giữ nguyên tỉ lệ ảnh không bị méo */
-    border-radius: 15px 15px 0 0 !important; /* Bo góc phía trên của card */
-}
-
-/* Khống chế độ rộng của card gợi ý cho gọn gàng */
-#related-products .card {
-    max-width: 280px;
-    margin: 0 auto;
-    border-radius: 20px;
-    overflow: hidden;
-}
-#accessory-list .image {
-    width: 100%;
-    max-width: 300px;     /* KHỐNG CHẾ ĐỘ RỘNG: Chỉnh số này nhỏ xuống nếu muốn ảnh phụ kiện nhỏ hơn nữa */
-    height: 200px;        /* CHIỀU CAO CỐ ĐỊNH: Đảm bảo hộp thức ăn và lồng chim cao bằng nhau */
-    margin: 0 auto 15px;  /* Căn tấm ảnh ra chính giữa khối sản phẩm */
-    overflow: hidden;     /* Giữ ảnh gọn gàng bên trong, không bị tràn viền */
-    border-radius: 15px;  /* Bo tròn nhẹ các góc ảnh */
-    background-color: blue; /* Tạo nền xám nhẹ phía sau nếu ảnh có nền trắng */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* 2. Cấu hình trực tiếp cho hình ảnh phụ kiện */
-#accessory-list .product-img,
-#accessory-list .image img {
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: contain !important; /* Dùng 'contain' thay vì 'cover' để thấy trọn vẹn phom lồng chim và bao bì thức ăn không bị cắt mất góc */
-    padding: 5px;          /* Tạo khoảng cách nhẹ giữa ảnh và viền khung */
-    transition: transform 0.2s ease;
-}
-
-/* 3. Hiệu ứng nhấp nháy hoặc zoom nhẹ khi di chuột vào món phụ kiện */
-#accessory-list .item:hover .image img {
-    transform: scale(1.05);
+/* ==========================================================================
+   11. ĐÁP ỨNG RESPONSIVE (MOBILE)
+   ========================================================================== */
+@media (max-width: 767.98px) {
+    main h2 {
+        font-size: 24px;
+        margin-bottom: 30px !important;
+    }
+    aside .card {
+        margin-bottom: 20px;
+    }
 }

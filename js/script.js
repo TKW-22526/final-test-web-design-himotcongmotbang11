@@ -3,6 +3,7 @@ const Category_Animals = [
         id: "a1",
         name: "Himalayan Monal (Chim quốc gia của Nepal)",
         price: "1500 usd",
+        status: "Khỏe mạnh ổn định",
         description: "Dòng chim sở hữu bộ lông ngũ sắc lấp lánh như cầu vồng.<br>Đây là quốc điểu của Nepal, mang vẻ đẹp quý phái và vô cùng linh thiêng.",
         image: "../assets/chim1.jpg",
         description1: "Vẻ đẹp rực rỡ mang đậm nét huyền bí của vùng núi Himalaya.",
@@ -12,6 +13,7 @@ const Category_Animals = [
         id: "a2",
         name: "Tit Xanh (Blue Tit)",
         price: "800 usd",
+        status: "Đã kiểm tra dịch tễ",
         description: "Loài chim nhỏ nhắn với sắc xanh lam và vàng đặc trưng.<br>Chúng vô cùng nhanh nhẹn, hoạt bát và có tiếng hót líu lo rất vui tai.",
         image: "../assets/chim2.jpg",
         description1: "Nhỏ bé, năng động và mang lại năng lượng tích cực cho không gian sống.",
@@ -21,6 +23,7 @@ const Category_Animals = [
         id: "a3",
         name: "Inca Tern",
         price: "1200 usd",
+        status: "Đang theo dõi dinh dưỡng",
         description: "Nổi bật với bộ lông màu xám sậm và cặp 'ria mép' trắng muốt độc lạ.<br>Loài chim này mang phong thái lịch lãm như một quý ông thực thụ.",
         image: "../assets/chim3.jpg",
         description1: "Độc đáo với cặp ria mép trắng, phong cách quý ông biển cả.",
@@ -30,6 +33,7 @@ const Category_Animals = [
         id: "a4",
         name: "Gouldian Finch",
         price: "600 usd",
+        status: "Khỏe mạnh ổn định",
         description: "Được mệnh danh là một trong những loài chim sắc màu nhất thế giới.<br>Sự pha trộn hoàn hảo giữa các mảng màu xanh, vàng, đỏ và tím trên cơ thể.",
         image: "../assets/chim4.jpg",
         description1: "Bảng màu sống động di động, cực kỳ thu hút ánh nhìn.",
@@ -39,6 +43,7 @@ const Category_Animals = [
         id: "a5",
         name: "Gà Ba Lan Viền Bạc",
         price: "900 usd",
+        status: "Đã kiểm tra dịch tễ",
         description: "Sở hữu chiếc bờm tóc khổng lồ che khuất cả mắt.<br>Bộ lông có các đường viền bạc tinh tế tạo nên vẻ ngoài cực kỳ kiêu sa và thời thượng.",
         image: "../assets/chim5.jpg",
         description1: "Mái tóc chuẩn 'fashionista' cùng bộ lông viền bạc sang chảnh.",
@@ -48,6 +53,7 @@ const Category_Animals = [
         id: "a6",
         name: "Gà Ba Lan Viền Bạc (Dòng Tuyển Chọn)",
         price: "950 usd",
+        status: "Khỏe mạnh ổn định",
         description: "Phiên bản đột biến với form dáng chuẩn và bờm tóc siêu dày.<br>Rất thích hợp cho những ai đam mê sưu tầm sinh vật cảnh độc lạ.",
         image: "../assets/chim6.jpg",
         description1: "Ngoại hình độc đáo, là tâm điểm của mọi ánh nhìn.",
@@ -57,6 +63,7 @@ const Category_Animals = [
         id: "a7",
         name: "Major Mitchell (Vẹt mào Major Mitchell)",
         price: "3500 usd",
+        status: "Đang theo dõi dinh dưỡng",
         description: "Dòng vẹt mào mềm mại với sắc hồng thiên thần.<br>Điểm nhấn là chiếc mào lớn màu đỏ cam rực rỡ xòe ra mỗi khi chúng phấn khích.",
         image: "../assets/chim7.jpg",
         description1: "Sắc hồng nhẹ nhàng kết hợp chiếc mào quyền lực, sang trọng.",
@@ -66,6 +73,7 @@ const Category_Animals = [
         id: "a8",
         name: "Đại Bàng Philippines",
         price: "7000 usd",
+        status: "Khỏe mạnh ổn định",
         description: "Một trong những loài đại bàng lớn và dũng mãnh nhất hành tinh.<br>Sở hữu sải cánh khổng lồ và chiếc mào bờm sư tử đầy uy quyền.",
         image: "../assets/chim8.jpg",
         description1: "Chúa tể rừng già dũng mãnh, biểu tượng của sức mạnh tuyệt đối.",
@@ -75,6 +83,7 @@ const Category_Animals = [
         id: "a9",
         name: "Chim Bồ Câu Jacobin",
         price: "1100 usd",
+        status: "Đã kiểm tra dịch tễ",
         description: "Dòng bồ câu quý tộc với phần lông cổ dựng đứng bao bọc lấy chiếc đầu.<br>Vẻ ngoài trông giống như đang khoác một chiếc áo lông hoàng gia.",
         image: "../assets/chim9.jpg",
         description1: "Kiêu sa, đài các với chiếc cổ bồng bềnh như quý tộc châu Âu.",
@@ -84,6 +93,7 @@ const Category_Animals = [
         id: "a10",
         name: "Longtail Broadbill (Mỏ rộng đuôi dài)",
         price: "1300 usd",
+        status: "Khỏe mạnh ổn định",
         description: "Sở hữu bộ lông màu xanh lục bảo kết hợp chiếc mũ màu đen vàng.<br>Đuôi dài thướt tha giúp chúng có những cú lượn vô cùng uyển chuyển.",
         image: "../assets/chim10.jpg",
         description1: "Màu sắc tinh tế, chiếc mỏ ngộ nghĩnh cùng chiếc đuôi dài quyến rũ.",
@@ -93,6 +103,7 @@ const Category_Animals = [
         id: "a11",
         name: "Chim Bồ Câu Jacobin Đen",
         price: "1250 usd",
+        status: "Đã kiểm tra dịch tễ",
         description: "Biến thể lông đen tuyền huyền bí của dòng Jacobin quý tộc.<br>Phần bờm cổ dày đặc tương phản mạnh mẽ mang lại cảm giác vô cùng lôi cuốn.",
         image: "../assets/chim11.jpg",
         description1: "Huyền bí và quyền lực với bộ cánh đen tuyền quý phái.",
@@ -102,6 +113,7 @@ const Category_Animals = [
         id: "a12",
         name: "Chim Bồ Câu Đăng Quang Victoria",
         price: "4000 usd",
+        status: "Khỏe mạnh ổn định",
         description: "Loài bồ câu lớn nhất thế giới với chiếc mào xòe như vương miện xanh đỉnh đầu.<br>Bộ lông màu xanh xám hoàng gia cực kỳ lộng lẫy.",
         image: "../assets/chim12.jpg",
         description1: "Mang vương miện nữ hoàng quyền quý, loài bồ câu lớn nhất thế giới.",
@@ -111,6 +123,7 @@ const Category_Animals = [
         id: "a13",
         name: "Kền Kền Ai Cập",
         price: "2500 usd",
+        status: "Đang theo dõi dinh dưỡng",
         description: "Loài chim thông minh biết sử dụng công cụ để kiếm ăn.<br>Khuôn mặt màu vàng tươi nổi bật trên nền lông trắng, mang vẻ đẹp cổ kính.",
         image: "../assets/chim13.jpg",
         description1: "Biểu tượng thần thoại cổ đại, thông minh và đầy sắc sảo.",
@@ -120,6 +133,7 @@ const Category_Animals = [
         id: "a14",
         name: "Toco Toucan",
         price: "4500 usd",
+        status: "Khỏe mạnh ổn định",
         description: "Nổi tiếng với chiếc mỏ khổng lồ màu cam rực rỡ chiếm phần lớn cơ thể.<br>Rất thân thiện, thông minh và có những biểu cảm cực kỳ tấu hài.",
         image: "../assets/chim14.jpg",
         description1: "Chiếc mỏ khổng lồ vui nhộn, biểu tượng quyến rũ của rừng nhiệt đới.",
@@ -129,6 +143,7 @@ const Category_Animals = [
         id: "a15",
         name: "Chim Bồ Câu Jacobin Red Splash",
         price: "1400 usd",
+        status: "Đã kiểm tra dịch tễ",
         description: "Sự pha trộn nghệ thuật giữa các mảng lông màu đỏ gạch và trắng mờ.<br>Cấu trúc bờm cổ hoàn hảo tôn lên thần thái kiêu kỳ vốn có.",
         image: "../assets/chim15.jpg",
         description1: "Sự phối màu ngẫu hứng đầy nghệ thuật trên nền áo choàng hoàng gia.",
@@ -138,6 +153,7 @@ const Category_Animals = [
         id: "a16",
         name: "Andean Cock-of-the-rock (Gà cồ đá Andean)",
         price: "3200 usd",
+        status: "Khỏe mạnh ổn định",
         description: "Quốc điểu của Peru với chiếc mào hình đĩa khổng lồ che kín mỏ.<br>Toàn thân mang một màu cam đỏ rực cháy, tương phản với đôi cánh đen.",
         image: "../assets/chim16.jpg",
         description1: "Sắc cam rực cháy cùng chiếc mào độc lạ vô nhị từ vùng núi Andes.",
@@ -147,6 +163,7 @@ const Category_Animals = [
         id: "a17",
         name: "Sếu Đăng Quang Màu Xám",
         price: "5500 usd",
+        status: "Đã kiểm tra dịch tễ",
         description: "Loài sếu cao lớn sở hữu vương miện làm từ những sợi lông vàng cứng cáp.<br>Dáng đi thanh thoát, uyển chuyển chuẩn hoàng gia.",
         image: "../assets/chim17.jpg",
         description1: "Vũ công của những đầm lầy với chiếc vương miện vàng quý phái.",
@@ -156,6 +173,7 @@ const Category_Animals = [
         id: "a18",
         name: "Cò Mỏ Giày (Shoebill)",
         price: "8888 usd",
+        status: "Khỏe mạnh ổn định",
         description: "Loài chim mang dáng dấp của khủng long thời tiền sử.<br>Chiếc mỏ khổng lồ hình chiếc giày và đôi mắt có cái nhìn 'lườm huýt' cực kỳ giải trí.",
         image: "../assets/chim18.jpg",
         description1: "Thần thái bất cần đời, sinh vật tiền sử vô cùng kiên nhẫn.",
@@ -165,6 +183,7 @@ const Category_Animals = [
         id: "a19",
         name: "Vua Kền Kền (King Vulture)",
         price: "3800 usd",
+        status: "Đang theo dõi dinh dưỡng",
         description: "Kền kền mang màu sắc sặc sỡ nhất với cái đầu được phối màu như một bức tranh đắp nổi.<br>Kích thước lớn và có uy quyền tối cao đối với các loài ăn xác thối khác.",
         image: "../assets/chim19.jpg",
         description1: "Cai trị bầu trời bằng chiếc đầu sặc sỡ và uy quyền tối cao.",
@@ -174,11 +193,302 @@ const Category_Animals = [
         id: "a20",
         name: "Vulturine Guineafowl (Gà lôi kền kền)",
         price: "1600 usd",
+        status: "Đã kiểm tra dịch tễ",
         description: "Dòng gà lôi có chiếc cổ dài giống kền kền nhưng sở hữu bộ lông thân màu xanh coban cực kỳ lộng lẫy.<br>Các đốm trắng li ti như những vì sao đêm.",
         image: "../assets/chim20.jpg",
         description1: "Sự kết hợp độc đáo giữa nét hoang dã và bộ lông xanh coban huyền diệu.",
         link: "chi-tiet.html"
-    }
+    },
+    {
+        id: "a21",
+        name: "Sáo đầu vàng (Black-winged Starling)",
+        price: "1200 usd",
+        status: "Đang theo dõi dinh dưỡng",
+        description: "Nổi bật với phần đầu màu vàng tươi đối lập hoàn toàn với bộ lông thân màu đen tuyền.<br>Một trong những loài sáo quý hiếm và được săn đón.",
+        image: "../assets/chim21.jpg",
+        description1: "Vẻ đẹp tương phản ấn tượng giữa sắc vàng rực rỡ và sắc đen huyền bí.",
+        link: "chi-tiet.html"
+    },
+    {
+        id: "a22",
+        name: "Sáo đá (Common Starling)",
+        price: "800 usd",
+        status: "Đã kiểm tra dịch tễ",
+        description: "Bộ lông màu đen ánh kim lấp lánh với những đốm trắng nhỏ li ti như bầu trời đầy sao.<br>Khả năng bắt chước âm thanh cực kỳ ấn tượng.",
+        image: "../assets/chim22.jpg",
+        description1: "Bậc thầy ngụy trang với bộ lông óng ánh dưới ánh mặt trời.",
+        link: "chi-tiet.html"
+    },
+    {
+        id: "a23",
+        name: "Sáo đầu trắng (White-headed Starling)",
+        price: "1500 usd",
+        status: "Đang theo dõi dinh dưỡng",
+        description: "Phần đầu màu kem nhạt nổi bật trên thân mình màu xám xanh.<br>Điểm nhấn là ánh kim xanh lục trên cánh.",
+        image: "../assets/chim23.jpg",
+        description1: "Sự thanh lịch toát ra từ bộ lông xám bạc và chiếc đầu sáng màu.",
+        link: "chi-tiet.html"
+    },
+    {
+        id: "a24",
+        name: "Sáo lưng đen (Daurian Starling)",
+        price: "1100 usd",
+        status: "Đã kiểm tra dịch tễ",
+        description: "Có mảng lông đen lớn trên lưng và cánh, tạo thành họa tiết đặc trưng.<br>Thường di cư và có tập tính xã hội cao.",
+        image: "../assets/chim24.jpg",
+        description1: "Họa tiết đen trắng tinh tế trên đôi cánh khiến chúng khó lòng bị nhầm lẫn.",
+        link: "chi-tiet.html"
+    },
+    {
+        id: "a25",
+        name: "Sáo ngực hồng (Chestnut-tailed Starling)",
+        price: "950 usd",
+        status: "Đang theo dõi dinh dưỡng",
+        description: "Sở hữu bộ lông màu xám nhạt ở đầu, kết hợp với phần ngực và bụng phớt hồng nâu.<br>Đôi mắt xanh dương sáng cùng mỏ vàng cam nổi bật.",
+        image: "../assets/chim25.jpg",
+        description1: "Vẻ đẹp nhẹ nhàng, tinh tế với những tông màu pastel tự nhiên.",
+        link: "chi-tiet.html"
+    },
+    {
+        id: "a26",
+        name: "Sáo đồng (Vinous-breasted Starling)",
+        price: "1050 usd",
+        status: "Đã kiểm tra dịch tễ",
+        description: "Bộ lông màu nâu đồng nhạt với phần đầu trắng và mảng đen quanh mắt.<br>Tính cách nhanh nhẹn, thường kiếm ăn trên mặt đất.",
+        image: "../assets/chim26.jpg",
+        description1: "Vẻ ngoài giản dị nhưng đầy sức sống với những gam màu ấm áp.",
+        link: "chi-tiet.html"
+    },
+{
+    id: "a27",
+    name: "Bồ câu trắng",
+    price: "850 usd",
+    status: "Đã kiểm tra dịch tễ",
+    description: "Bộ lông trắng thuần khiết tựa như những áng mây.<br>Dáng vẻ thanh cao, tao nhã thu hút mọi ánh nhìn.",
+    image: "../assets/chim27.jpg",
+    description1: "Biểu tượng của sự bình yên và tinh khôi.",
+    link: "chi-tiet.html"
+},
+{
+    id: "a28",
+    name: "Bồ câu rừng",
+    price: "900 usd",
+    status: "Đã kiểm tra dịch tễ",
+    description: "Sắc xám ghi đặc trưng mang đậm vẻ đẹp hoang dã.<br>Cơ thể săn chắc, linh hoạt và tràn đầy sức sống.",
+    image: "../assets/chim28.jpg",
+    description1: "Vẻ đẹp gần gũi với thiên nhiên hoang sơ.",
+    link: "chi-tiet.html"
+},
+{
+    id: "a29",
+    name: "Bồ câu nâu",
+    price: "880 usd",
+    status: "Đã kiểm tra dịch tễ",
+    description: "Bộ lông màu nâu ấm áp với các vệt màu nhẹ nhàng.<br>Thần thái điềm tĩnh, tạo cảm giác thân thiện, dễ mến.",
+    image: "../assets/chim29.jpg",
+    description1: "Giống chim kiểng mang lại sự ấm cúng cho không gian.",
+    link: "chi-tiet.html"
+},
+{
+    id: "a30",
+    name: "Bồ câu xám",
+    price: "950 usd",
+    status: "Đã kiểm tra dịch tễ",
+    description: "Sắc lông xám phối cùng ánh kim loại ở vùng cổ.<br>Ngoại hình sang trọng, dáng đứng vững chãi.",
+    image: "../assets/chim30.jpg",
+    description1: "Sự kết hợp giữa vẻ đẹp cổ điển và hiện đại.",
+    link: "chi-tiet.html"
+},
+{
+    id: "a31",
+    name: "Vẹt Cockatoo trắng",
+    price: "3200 usd",
+    status: "Đã kiểm tra dịch tễ",
+    description: "Nổi bật với bộ lông trắng muốt và chiếc mào linh hoạt.<br>Nổi tiếng thông minh, giàu tình cảm với chủ nhân.",
+    image: "../assets/chim31.jpg",
+    description1: "Người bạn đồng hành đầy cảm xúc và thông minh.",
+    link: "chi-tiet.html"
+},
+{
+    id: "a32",
+    name: "Vẹt Rainbow Lorikeet",
+    price: "1800 usd",
+    status: "Đã kiểm tra dịch tễ",
+    description: "Bộ lông đa sắc màu như dải cầu vồng rực rỡ.<br>Tính cách năng động, thích bay nhảy và tương tác.",
+    image: "../assets/chim32.jpg",
+    description1: "Vẻ đẹp rực rỡ nhất trong thế giới loài vẹt.",
+    link: "chi-tiet.html"
+},
+{
+    id: "a33",
+    name: "Vẹt Sun Conure",
+    price: "2200 usd",
+    status: "Đã kiểm tra dịch tễ",
+    description: "Sắc vàng cam chói lọi tựa như tia nắng ban mai.<br>Kích thước nhỏ gọn, tính cách hòa đồng, dễ gần.",
+    image: "../assets/chim33.jpg",
+    description1: "Niềm vui rạng rỡ mang lại cho ngôi nhà của bạn.",
+    link: "chi-tiet.html"
+},
+{
+    id: "a34",
+    name: "Vẹt Cockatiel",
+    price: "700 usd",
+    status: "Đã kiểm tra dịch tễ",
+    description: "Vẹt mào nhỏ với đôi má cam hồng đáng yêu.<br>Tính cách hiền hòa, rất dễ thuần hóa và chăm sóc.",
+    image: "../assets/chim34.jpg",
+    description1: "Lựa chọn hoàn hảo cho những người mới chơi vẹt.",
+    link: "chi-tiet.html"
+},
+{
+    id: "a35",
+    name: "Vẹt Hyacinth Macaw",
+    price: "15000 usd",
+    status: "Đã kiểm tra dịch tễ",
+    description: "Sắc xanh coban quý hiếm với kích thước khổng lồ.<br>Vẻ đẹp uy nghi, kiêu hãnh và vô cùng đẳng cấp.",
+    image: "../assets/chim35.jpg",
+    description1: "Đỉnh cao của sự sang trọng và xa hoa.",
+    link: "chi-tiet.html"
+},
+{
+    id: "a36",
+    name: "Vẹt xám Châu Phi",
+    price: "2500 usd",
+    status: "Đã kiểm tra dịch tễ",
+    description: "Bộ lông xám trang nhã cùng cái đuôi đỏ rực.<br>Sở hữu trí thông minh bậc nhất, có khả năng học hỏi ngôn ngữ xuất sắc.",
+    image: "../assets/chim36.jpg",
+    description1: "Bậc thầy bắt chước ngôn ngữ của loài chim.",
+    link: "chi-tiet.html"
+},
+{
+    id: "a37",
+    name: "Vẹt Macaw đỏ",
+    price: "4500 usd",
+    status: "Đã kiểm tra dịch tễ",
+    description: "Sắc đỏ rực rỡ kết hợp với các mảng màu vàng xanh.<br>Kích thước ấn tượng, quyền năng trong mọi không gian.",
+    image: "../assets/chim37.jpg",
+    description1: "Vẻ đẹp nổi bật và đầy ấn tượng.",
+    link: "chi-tiet.html"
+},
+{
+    id: "a38",
+    name: "Vẹt Cockatiel xám",
+    price: "650 usd",
+    status: "Đã kiểm tra dịch tễ",
+    description: "Màu xám tinh tế phối cùng các sọc trắng nhẹ nhàng.<br>Vẻ đẹp trầm ổn, quý phái và đầy sức hút.",
+    image: "../assets/chim38.jpg",
+    description1: "Sự lựa chọn của vẻ đẹp tối giản và đẳng cấp.",
+    link: "chi-tiet.html"
+},
+{
+    id: "a39",
+    name: "Bướm đêm Poodle",
+    price: "Chưa định giá",
+    status: "Sinh vật tự nhiên",
+    description: "Côn trùng lạ với lớp lông mịn bao phủ toàn thân như cục bông.<br>Vẻ ngoài độc đáo, hiếm gặp trong tự nhiên.",
+    image: "../assets/chim39.jpg",
+    description1: "Vẻ đẹp kỳ lạ, thu hút mọi sự tò mò.",
+    link: "chi-tiet.html"
+},
+{
+    id: "a40",
+    name: "Bọ cánh cứng sừng ngắn",
+    price: "150 usd",
+    status: "Đã kiểm tra dịch tễ",
+    description: "Bọ cánh cứng với lớp vỏ đen bóng cứng cáp.<br>Sức mạnh ẩn chứa trong hình dáng nhỏ bé và vững chãi.",
+    image: "../assets/chim40.jpg",
+    description1: "Biểu tượng của sức mạnh và sự bền bỉ.",
+    link: "chi-tiet.html"
+},
+{
+    id: "a41",
+    name: "Bọ hung Hercules",
+    price: "500 usd",
+    status: "Đã kiểm tra dịch tễ",
+    description: "Loài bọ khổng lồ sở hữu cặp sừng dài đầy quyền uy.<br>Lớp vỏ cứng cáp cùng kích thước vượt trội.",
+    image: "../assets/chim41.jpg",
+    description1: "Kỳ quan mạnh mẽ của thế giới côn trùng.",
+    link: "chi-tiet.html"
+},
+{
+    id: "a42",
+    name: "Bọ kẹp kìm",
+    price: "300 usd",
+    status: "Đã kiểm tra dịch tễ",
+    description: "Sở hữu cặp hàm lớn giống như sừng hươu dùng để chiến đấu.<br>Vẻ ngoài đầy bản lĩnh và phong cách chiến binh.",
+    image: "../assets/chim42.jpg",
+    description1: "Chiến binh thực thụ của rừng già.",
+    link: "chi-tiet.html"
+},
+{
+    id: "a44",
+    name: "Bọ hung ngọc lục bảo",
+    price: "250 usd",
+    status: "Đã kiểm tra dịch tễ",
+    description: "Lớp vỏ ngoài sáng bóng tựa như kim loại quý.<br>Vẻ đẹp lấp lánh như món trang sức tinh xảo.",
+    image: "../assets/chim44.jpg",
+    description1: "Kiệt tác màu sắc đầy tinh tế.",
+    link: "chi-tiet.html"
+},
+{
+    id: "a45",
+    name: "Bướm xanh",
+    price: "200 usd",
+    status: "Đã kiểm tra dịch tễ",
+    description: "Cánh màu xanh coban rực rỡ, mềm mại.<br>Sải cánh uyển chuyển tạo nên vũ điệu thanh thoát.",
+    image: "../assets/chim45.jpg",
+    description1: "Sự tinh tế nhẹ nhàng của tự nhiên.",
+    link: "chi-tiet.html"
+},
+{
+    id: "a46",
+    name: "Bướm trắng",
+    price: "180 usd",
+    status: "Đã kiểm tra dịch tễ",
+    description: "Vẻ đẹp tinh khôi với màu trắng trong trẻo.<br>Cánh bướm mỏng manh tạo cảm giác thư thái, dễ chịu.",
+    image: "../assets/chim46.jpg",
+    description1: "Sự tĩnh lặng và trong sáng của cánh bướm.",
+    link: "chi-tiet.html"
+},
+{
+    id: "a47",
+    name: "Bướm cam đen",
+    price: "220 usd",
+    status: "Đã kiểm tra dịch tễ",
+    description: "Họa tiết đối xứng giữa hai màu cam và đen nổi bật.<br>Vẻ đẹp nghệ thuật đầy màu sắc sinh động.",
+    image: "../assets/chim47.jpg",
+    description1: "Điểm nhấn sắc màu nghệ thuật.",
+    link: "chi-tiet.html"
+},
+{
+    id: "a48",
+    name: "Bướm đen đỏ",
+    price: "250 usd",
+    status: "Đã kiểm tra dịch tễ",
+    description: "Sự kết hợp hoàn hảo giữa màu đen huyền bí và sắc đỏ quyến rũ.<br>Vẻ ngoài sang trọng, lạ mắt và đầy cuốn hút.",
+    image: "../assets/chim48.jpg",
+    description1: "Vẻ đẹp huyền bí, lôi cuốn.",
+    link: "chi-tiet.html"
+},
+{
+    id: "a49",
+    name: "Chim sẻ",
+    price: "100 usd",
+    status: "Đã kiểm tra dịch tễ",
+    description: "Loài chim nhỏ nhắn, nhanh nhẹn và lanh lợi.<br>Sức sống dẻo dai và khả năng thích nghi cao.",
+    image: "../assets/chim49.jpg",
+    description1: "Vẻ đẹp bình dị và gần gũi trong đời thường.",
+    link: "chi-tiet.html"
+},
+{
+    id: "a50",
+    name: "Quạ",
+    price: "300 usd",
+    status: "Đã kiểm tra dịch tễ",
+    description: "Trí tuệ thông minh cùng bộ lông đen tuyền sang trọng.<br>Ánh nhìn sắc sảo và dáng vẻ đầy bí ẩn.",
+    image: "../assets/chim50.jpg",
+    description1: "Vẻ đẹp thông tuệ, đầy bản lĩnh và quyền uy.",
+    link: "chi-tiet.html"
+}
 ];
 
 const Category_Accessories = [
@@ -237,8 +547,6 @@ const Category_Accessories = [
         description1: "Nhỏ gọn, tinh tế, phom tròn chuẩn mực cho chim nhỏ.",
         link: "chi-tiet.html"
     },
-
-    // ================= DINH DƯỠNG & THỨC ĂN =================
     {
         id: "acc7",
         name: "Cám Tổng Hợp Cao Cấp (Mẫu 1)",
@@ -262,7 +570,7 @@ const Category_Accessories = [
         name: "Hạt Trái Cây Sấy Khô FruitBlend (Mẫu 3)",
         price: "25 usd",
         description: "Nhập khẩu chính hãng với hương vị trái cây thơm ngon kích thích vị giác.<br>Giúp bổ sung vitamin tự nhiên, tăng đề kháng cho các dòng vẹt và chim lớn.",
-        image: "../assets/thuc/thuc3.jpg",
+        image: "../assets/thuc//thuc3.jpg",
         description1: "Sắc màu bắt mắt, giàu Vitamin và khoáng chất tự nhiên.",
         link: "chi-tiet.html"
     },
@@ -313,157 +621,150 @@ const Category_Accessories = [
     }
 ];
 
-// Gộp chung 2 mảng để phục vụ cho việc tìm kiếm ở trang Chi tiết (Detail)
+// 2. DỮ LIỆU PHỤ KIỆN VÀ THỨC ĂN
 const AllProducts = [...Category_Animals, ...Category_Accessories];
 
-// Hàm tạo cấu trúc HTML cho từng sản phẩm
-function createItem(obj, containerId) {      
-    const listProducts = document.getElementById(containerId);
-    if (!listProducts) return; 
-
-    const item = document.createElement("div");
-    item.className = "col-12 col-md-4 mb-4 item position-relative";
-
-    const containerImage = document.createElement("div");
-    containerImage.setAttribute("class", "image");
-
-    const img = document.createElement("img");
-    img.setAttribute("src", obj.image);
-    img.setAttribute("alt", obj.name);
-    img.setAttribute("style", "border-radius: 30px; weight:500px; height: 10%; object-fit: cover;");
-    containerImage.appendChild(img);
-
-    const containerInfo = document.createElement("div");
-    containerInfo.setAttribute("class", "info card-body");
-
-    const namepro = document.createElement("h4"); 
-    namepro.innerHTML = obj.name;
-
-    const price = document.createElement("p");
-    price.setAttribute("class", "text-danger font-weight-bold");
-    price.innerHTML = obj.price; 
-
-    const description = document.createElement("p");
-    description.setAttribute("class", "card-text");
-    description.innerHTML = obj.description1; 
-    
-    const linkProduct = document.createElement("a");
-    linkProduct.innerHTML = "Xem chi tiết";
-    linkProduct.setAttribute("href", obj.link + "?id=" + obj.id);
-    linkProduct.setAttribute("class", "btn btn-danger btn-block mt-2");
-
-    containerInfo.appendChild(namepro);
-    containerInfo.appendChild(price);
-    containerInfo.appendChild(description);
-    containerInfo.appendChild(linkProduct);
-
-    item.appendChild(containerImage);
-    item.appendChild(containerInfo);
-    listProducts.appendChild(item);
-}
-
-// Hàm chạy vòng lặp tải danh sách sản phẩm theo từng khu vực
-function loadProductsToContainer(objArray, containerId) {
-    const container = document.getElementById(containerId);
-    if (container) {
-        container.innerHTML = ""; // Xóa dữ liệu cũ (nếu có)
-        for (let i = 0; i < objArray.length; i++) {
-            createItem(objArray[i], containerId); 
-        }
+// ==========================================
+// 2. HÀM GIỎ HÀNG (An toàn)
+// ==========================================
+function addToCart(productId) {
+    let cart = JSON.parse(localStorage.getItem('myCart')) || [];
+    if (!cart.includes(productId)) {
+        cart.push(productId);
+        localStorage.setItem('myCart', JSON.stringify(cart));
+        updateCartCount();
+        alert("Đã thêm vào giỏ hàng!");
+    } else {
+        alert("Sản phẩm đã có trong giỏ hàng.");
     }
 }
 
-/// Hàm xử lý hiển thị chi tiết sản phẩm và gợi ý sản phẩm liên quan theo nhóm
+function updateCartCount() {
+    const cart = JSON.parse(localStorage.getItem('myCart')) || [];
+    const countElement = document.getElementById("cart-count");
+    // Chỉ cập nhật nếu phần tử tồn tại (tránh lỗi trên trang không có giỏ hàng)
+    if (countElement) {
+        countElement.innerText = cart.length;
+    }
+}
+
+// ==========================================
+// 3. TÌM KIẾM
+// ==========================================
+const searchInput = document.getElementById("search-input");
+if (searchInput) {
+    searchInput.addEventListener("input", function() {
+        const keyword = this.value.toLowerCase();
+        const filteredAnimals = Category_Animals.filter(item => item.name.toLowerCase().includes(keyword));
+        const filteredAccessories = Category_Accessories.filter(item => item.name.toLowerCase().includes(keyword));
+        
+        renderProducts(filteredAnimals, "animal-list");
+        renderProducts(filteredAccessories, "accessory-list");
+    });
+}
+
+const filterSelect = document.getElementById('filter-tag');
+
+if (filterSelect) {
+    filterSelect.addEventListener('change', function() {
+        const value = this.value; // 'all', 'chim', 'ga-canh', v.v.
+        
+        let filteredData;
+        if (value === 'all') {
+            // Nếu chọn tất cả, gộp cả 2 mảng lại
+            filteredData = AllProducts;
+        } else {
+            // Lọc dựa trên logic id (cần đặt id tương ứng hoặc thêm thuộc tính category vào mảng)
+            // Ví dụ đơn giản: lọc theo category nếu bạn thêm trường category vào mảng
+            filteredData = AllProducts.filter(item => {
+                // Giả sử bạn muốn lọc theo danh mục, hãy thêm field 'category' vào mảng đối tượng
+                // Hoặc lọc thủ công theo id như dưới đây:
+                if (value === 'chim') return item.id.startsWith('a1') && item.id <= 'a38';
+                if (value === 'ga-canh') return item.name.includes('Gà');
+                if (value === 'long-chim') return item.id.startsWith('acc1'); // Ví dụ lồng
+                if (value === 'thuc-an') return item.id.startsWith('acc7');   // Ví dụ thức ăn
+                return true;
+            });
+        }
+        
+        // Render lại danh sách sau khi lọc
+        renderProducts(filteredData, "animal-list");
+    });
+}
+// 4. HÀM RENDER GIAO DIỆN
+// ==========================================
+function renderProducts(data, containerId) {
+    const container = document.getElementById(containerId);
+    if (!container) return;
+
+    if (data.length === 0) {
+        container.innerHTML = `<div class="col-12 text-center text-muted">Không tìm thấy sản phẩm.</div>`;
+        return;
+    }
+
+    container.innerHTML = data.map(item => {
+        // Hiển thị status an toàn
+        const healthBadge = item.status ? `<span class="badge badge-success mb-2">Tình trạng: ${item.status}</span>` : '';
+        return `
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card h-100 shadow-sm border-0" style="border-radius: 20px; overflow: hidden;">
+                    <img src="${item.image}" alt="${item.name}" style="width: 100%; height: 250px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="font-weight-bold">${item.name}</h5>
+                        <p class="text-danger font-weight-bold">${item.price}</p>
+                        ${healthBadge}
+                        <p class="card-text text-muted small">${item.description1 || ''}</p>
+                        <div class="d-flex gap-2">
+                            <a href="${item.link}?id=${item.id}" class="btn btn-outline-danger flex-grow-1">Chi tiết</a>
+                            <button onclick="addToCart('${item.id}')" class="btn btn-danger">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `;
+    }).join('');
+}
+
+// ==========================================
+// 5. HÀM CHI TIẾT SẢN PHẨM (Đã chỉnh sửa theo yêu cầu)
+// ==========================================
 function loadProductDetail() {
     const urlParams = new URLSearchParams(window.location.search);
     const productId = urlParams.get('id');
+    const product = AllProducts.find(item => item.id === productId);
 
-    // Tìm kiếm sản phẩm trong toàn bộ danh mục gộp chung
-    const currentProduct = AllProducts.find(item => item.id === productId);
-
-    if (currentProduct) {
-        document.title = currentProduct.name;
+    if (product) {
+        document.title = product.name;
         
-        const img = document.getElementById("detail-image");
-        if(img) img.setAttribute("src", currentProduct.image);
-
-        const name = document.getElementById("detail-name");
-        if(name) name.innerHTML = currentProduct.name;
-
-        const price = document.getElementById("detail-price");
-        if(price) price.innerHTML = currentProduct.price;
-
-        const desc = document.getElementById("detail-description");
-        if(desc) desc.innerHTML = currentProduct.description;
-
-        const style = document.getElementById("detail-style");
-        if(style) style.innerHTML = currentProduct.description1;
-
-        // ================= XỬ LÝ SẢN PHẨM TƯƠNG TỰ THÔNG MINH =================
-        const relatedContainer = document.getElementById("related-products");
-        if (relatedContainer) {
-            let relatedPool = [];
-
-            // Thuật toán phân nhóm: Kiểm tra xem sản phẩm hiện tại thuộc mảng nào
-            const isAnimal = Category_Animals.some(item => item.id === productId);
-            
-            if (isAnimal) {
-                // Nếu là CHIM: Lọc ra các con chim khác (loại bỏ con hiện tại)
-                relatedPool = Category_Animals.filter(item => item.id !== productId);
-            } else {
-                // Nếu là PHỤ KIỆN: Lọc ra các phụ kiện khác (loại bỏ món hiện tại)
-                relatedPool = Category_Accessories.filter(item => item.id !== productId);
-            }
-
-            // Sắp xếp ngẫu nhiên danh sách đã lọc để mỗi lần F5 sẽ ra các gợi ý mới mẻ
-            const shuffledRelated = relatedPool.sort(() => 0.5 - Math.random());
-
-            // Trích xuất lấy đúng 3 sản phẩm cùng nhóm để hiển thị
-            const displayProducts = shuffledRelated.slice(0, 3); 
-
-            let htmlContent = '';
-            displayProducts.forEach(prod => {
-                htmlContent += `
-                    <div class="col-12 col-md-4 mb-4">
-                        <div class="card h-100 shadow-sm border-0" style="border-radius: 20px; overflow: hidden;">
-                            <img src="${prod.image}" alt="${prod.name}" class="card-img-top" style="height: 180px; object-fit: cover;">
-                            <div class="card-body d-flex flex-column">
-                                <h6 class="card-title font-weight-bold text-dark">${prod.name}</h6>
-                                <p class="card-text text-danger font-weight-bold mb-2">${prod.price}</p>
-                                <a href="${prod.link}?id=${prod.id}" class="btn btn-outline-danger btn-block mt-auto" style="font-size: 14px; border-radius: 20px;">Xem Ngay</a>
-                            </div>
-                        </div>
-                    </div>
-                `;
-            });
-            relatedContainer.innerHTML = htmlContent;
+        // Gán dữ liệu cơ bản
+        if (document.getElementById("detail-image")) document.getElementById("detail-image").src = product.image;
+        if (document.getElementById("detail-name")) document.getElementById("detail-name").innerText = product.name;
+        if (document.getElementById("detail-price")) document.getElementById("detail-price").innerText = product.price;
+        if (document.getElementById("detail-style")) document.getElementById("detail-style").innerText = product.description1 || "";
+        if (document.getElementById("detail-description")) document.getElementById("detail-description").innerHTML = product.description || "";
+        
+        // Cập nhật Tình trạng sức khỏe (Thay thế y tế)
+        const healthEl = document.getElementById("detail-health");
+        if (healthEl) {
+            healthEl.innerText = product.status || "Chưa cập nhật tình trạng";
         }
 
-    } else {
-        const container = document.getElementById("detail-container");
-        if(container) {
-            container.innerHTML = `
-                <div class="col-12 text-center py-5">
-                    <h3>⚠️ Không tìm thấy thông tin sản phẩm này!</h3>
-                    <a href="index.html" class="btn btn-primary mt-3">Quay lại cửa hàng</a>
-                </div>`;
+        // Gán chức năng nút mua hàng
+        const cartBtn = document.getElementById("add-to-cart-btn");
+        if (cartBtn) {
+            cartBtn.onclick = () => addToCart(product.id);
         }
     }
 }
-// ================= PHÂN LUỒNG KHỞI CHẠY ĐỘNG TẠI ĐÂY =================
-window.addEventListener('DOMContentLoaded', () => {
-    // 1. Tải danh sách Động vật có cánh nếu có khu vực hiển thị tương ứng
-    if (document.getElementById("animal-list")) {
-        loadProductsToContainer(Category_Animals, "animal-list");
-    }
 
-    // 2. Tải danh sách Đồ dùng cần thiết nếu có khu vực hiển thị tương ứng
-    if (document.getElementById("accessory-list")) {
-        loadProductsToContainer(Category_Accessories, "accessory-list");
-    }
-    
-    // 3. Tải thông tin trang Chi tiết sản phẩm
-    if (document.getElementById("detail-container")) {
-        loadProductDetail();
-    }
+// ==========================================
+// 6. KHỞI CHẠY (DOMContentLoaded)
+// ==========================================
+window.addEventListener('DOMContentLoaded', () => {
+    updateCartCount(); // Cập nhật số giỏ hàng trên mọi trang
+    if (document.getElementById("animal-list")) renderProducts(Category_Animals, "animal-list");
+    if (document.getElementById("accessory-list")) renderProducts(Category_Accessories, "accessory-list");
+    if (document.getElementById("detail-container")) loadProductDetail();
 });

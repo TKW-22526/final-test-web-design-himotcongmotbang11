@@ -4,46 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Danh Sách Sản Phẩm - SkyWings Store</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
         <div class="container">
-            <a class="navbar-brand font-weight-bold text-danger" href="../index.html">🦜 SkyWings Store</a>
-            <div class="navbar-nav ml-auto flex-row">
+            <a class="navbar-brand fw-bold text-danger" href="../index.html">🦜 SkyWings Store</a>
+            <div class="navbar-nav ms-auto flex-row">
                 <a class="nav-link px-3" href="../index.html">Trang chủ</a>
                 <a class="nav-link active px-3" href="san-pham.html">Sản phẩm</a>
-                <a class="nav-link px-3" href="phu-kien.html">Phụ Kiện</a>
+                <a class="nav-link active px-3" href="phu-kien.html">Phụ Kiện</a>
                 <a class="nav-link px-3" href="lien-he.html">Liên hệ</a>
             </div>
         </div>
     </nav>
 
-    <main class="container my-5">
-        <h2 class="font-weight-bold text-center mb-5 text-dark">TẤT CẢ SẢN PHẨM CAO CẤP</h2>
+    <main class="container-fluid my-5 px-md-5">
+        <h2 class="fw-bold text-center mb-5 text-light">TẤT CẢ SẢN PHẨM CAO CẤP</h2>
         
-        <section class="mb-5">
-            <h4 class="font-weight-bold text-secondary mb-4">🦜 Động Vật Có Cánh</h4>
-            <div id="animal-list" class="row">
-                </div>
-        </section>
+        <div class="row">
+            <aside class="col-12 col-lg-3 mb-4">
+                <div class="card p-4 border-0 shadow-sm" style="border-radius: 15px;">
+                    <h5 class="fw-bold mb-4 text-dark"><i class="fas fa-filter text-danger me-2"></i>Bộ Lọc Tìm Kiếm</h5>
+                    
+                    <div class="mb-4">
+                        <label class="fw-bold text-secondary small mb-2">TÌM KIẾM TÊN SẢN PHẨM</label>
+                        <div class="input-group">
+                            <input type="text" id="search-input" class="form-control text-muted" placeholder="Nhập tên chim, phụ kiện..." style="border-radius: 10px 0 0 10px;">
+                            <span class="input-group-text bg-danger text-white border-0" style="border-radius: 0 10px 10px 0;"><i class="fas fa-search"></i></span>
+                        </div>
+                    </div>
 
-        <hr class="my-5">
+                    <div class="mb-4">
+                        <label class="fw-bold text-secondary small mb-2">DANH MỤC PHÂN LOẠI</label>
+                        <select id="filter-tag" class="form-select text-muted" style="border-radius: 10px;">
+                            <option value="all">-- Hiển thị tất cả sản phẩm --</option>
+                            <option value="chim">🦜 Động vật có cánh (Chim cảnh)</option>
+                            <option value="ga-canh">🐓 Các dòng Gà Cảnh đặc sắc</option>
+                            <option value="long-chim">🌾 Thức ăn & 🏠 Lồng chim thủ công</option>
+                        </select>
+                    </div>
 
-        <section class="mb-5">
-            <h4 class="font-weight-bold text-secondary mb-4">💎 Phụ Kiện & Thức Ăn Cao Cấp</h4>
-            <div id="accessory-list" class="row">
+                    <div class="mb-4">
+                        <label class="fw-bold text-secondary small mb-2">TRẠNG THÁI Y TẾ & SỨC KHỎE</label>
+                        <select id="filter-status" class="form-select text-muted" style="border-radius: 10px;">
+                            <option value="all">-- Tất cả trạng thái --</option>
+                            <option value="Đã kiểm tra dịch tễ">Đã kiểm tra dịch tễ</option>
+                            <option value="Khỏe mạnh ổn định">Khỏe mạnh ổn định</option>
+                            <option value="Đang theo dõi dinh dưỡng">Đang theo dõi dinh dưỡng</option>
+                        </select>
+                    </div>
+
+                    <button id="btn-reset" class="btn btn-outline-secondary w-100" style="border-radius: 10px;">
+                        <i class="fas fa-undo me-2"></i>Xóa bộ lọc
+                    </button>
                 </div>
-        </section>
-        
+            </aside>
+
+            <section class="col-12 col-lg-9">
+                <div class="mb-5">
+                    <h4 class="fw-bold text-secondary mb-4 pb-2 border-bottom"><i class="fas fa-dove text-danger me-2"></i>🦜 Động Vật Có Cánh</h4>
+                    <div id="animal-list" class="row">
+                        </div>
+                </div>
+
+                <div>
+                    <h4 class="fw-bold text-secondary mb-4 pb-2 border-bottom"><i class="fas fa-gem text-warning me-2"></i>💎 Phụ Kiện & Thức Ăn Cao Cấp</h4>
+                    <div id="accessory-list" class="row">
+                        </div>
+                </div>
+            </section>
+        </div>
     </main>
 
     <footer class="text-center py-4 bg-dark text-white">
         <p class="mb-0">&copy; 2026 SkyWings Store. Tất cả các quyền được bảo lưu.</p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../js/script.js"></script>
 </body>
 </html>
